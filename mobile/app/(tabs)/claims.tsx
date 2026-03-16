@@ -20,7 +20,7 @@ export default function ClaimsScreen() {
       {/* Header */}
       <View className="px-6 flex-row justify-between items-center pb-6">
         <View className="flex-row items-center">
-          <ArrowLeft color="#1e293b" size={24} className="mr-4" />
+          <View style={{ marginRight: 16 }}><ArrowLeft color="#1e293b" size={24} /></View>
           <Text className="text-xl font-bold text-slate-800">Claims & Payouts</Text>
         </View>
         <View className="relative">
@@ -76,7 +76,7 @@ export default function ClaimsScreen() {
                 <View className="w-6 h-6 rounded-full bg-green-100 items-center justify-center mr-4 z-10 mt-1">
                   <CheckCircle2 color="#16a34a" size={16} />
                 </View>
-                <View>
+                <View style={{ flex: 1 }}>
                   <Text className="text-slate-800 font-medium">Weather disruption detected</Text>
                   <Text className="text-slate-500 text-sm mt-0.5">11:30 AM</Text>
                 </View>
@@ -88,7 +88,7 @@ export default function ClaimsScreen() {
                 <View className={`w-6 h-6 rounded-full ${isClaimTriggered ? 'bg-green-100' : 'bg-slate-100'} items-center justify-center mr-4 z-10 mt-1`}>
                   {isClaimTriggered ? <CheckCircle2 color="#16a34a" size={16} /> : <Circle color="#cbd5e1" size={16} />}
                 </View>
-                <View>
+                <View style={{ flex: 1 }}>
                   <Text className={`${isClaimTriggered ? 'text-slate-800' : 'text-slate-400'} font-medium`}>Claim auto-triggered</Text>
                   <Text className="text-slate-500 text-sm mt-0.5">11:35 AM</Text>
                 </View>
@@ -100,7 +100,7 @@ export default function ClaimsScreen() {
                 <View className={`w-6 h-6 rounded-full ${isVerifying && !isPayoutProcessing ? 'bg-blue-100' : (isVerifying ? 'bg-green-100' : 'bg-slate-100')} items-center justify-center mr-4 z-10 mt-1`}>
                   {isPayoutProcessing ? <CheckCircle2 color="#16a34a" size={16} /> : isVerifying ? <Clock color="#2563eb" size={16} /> : <Circle color="#cbd5e1" size={16} />}
                 </View>
-                <View>
+                <View style={{ flex: 1 }}>
                   <Text className={`${isVerifying && !isPayoutProcessing ? 'text-blue-600 font-medium' : (isVerifying ? 'text-slate-800 font-medium' : 'text-slate-400')}`}>Verification in progress</Text>
                   <Text className="text-slate-500 text-sm mt-0.5">12:00 PM</Text>
                 </View>
@@ -112,7 +112,7 @@ export default function ClaimsScreen() {
                 <View className={`w-6 h-6 rounded-full ${isPayoutProcessing && !isPayoutCompleted ? 'bg-blue-100' : (isPayoutCompleted ? 'bg-green-100' : 'bg-slate-100')} items-center justify-center mr-4 z-10 mt-1`}>
                   {isPayoutCompleted ? <CheckCircle2 color="#16a34a" size={16} /> : isPayoutProcessing ? <Clock color="#2563eb" size={16} /> : <Circle color="#94a3b8" size={16} />}
                 </View>
-                <View>
+                <View style={{ flex: 1 }}>
                   <Text className={`${isPayoutProcessing && !isPayoutCompleted ? 'text-blue-600 font-medium' : (isPayoutCompleted ? 'text-slate-800 font-medium' : 'text-slate-400')}`}>Payout processing</Text>
                   <Text className="text-slate-500 text-sm mt-0.5">{isPayoutCompleted ? '1:00 PM' : 'Pending'}</Text>
                 </View>
@@ -123,7 +123,7 @@ export default function ClaimsScreen() {
                 <View className={`w-6 h-6 rounded-full ${isPayoutCompleted ? 'bg-green-100' : 'bg-slate-100'} items-center justify-center mr-4 z-10 mt-1`}>
                   {isPayoutCompleted ? <CheckCircle2 color="#16a34a" size={16} /> : <Circle color="#94a3b8" size={16} />}
                 </View>
-                <View>
+                <View style={{ flex: 1 }}>
                   <Text className={`${isPayoutCompleted ? 'text-slate-800 font-medium' : 'text-slate-400'}`}>Payout completed</Text>
                   <Text className="text-slate-500 text-sm mt-0.5">{isPayoutCompleted ? '1:15 PM' : 'Pending'}</Text>
                 </View>

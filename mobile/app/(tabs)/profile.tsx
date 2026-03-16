@@ -70,7 +70,7 @@ export default function ProfileScreen() {
                <View className="w-10 h-10 rounded-full bg-emerald-50 items-center justify-center mr-3">
                  <FileText color="#10b981" size={20} />
                </View>
-               <View>
+               <View style={{ flex: 1 }}>
                  <Text className="text-slate-800 font-bold text-sm">Weekly Coverage Summary</Text>
                </View>
             </View>
@@ -121,7 +121,7 @@ export default function ProfileScreen() {
              <View className="w-10 h-10 rounded-full bg-blue-50 items-center justify-center mr-4">
                 <Phone color="#3b82f6" size={18} />
              </View>
-             <View>
+             <View style={{ flex: 1 }}>
                  <Text className="text-slate-800 font-bold text-[15px]">24×7 Worker Helpline</Text>
                  <Text className="text-slate-500 text-xs mt-0.5">1800-XXX-XXXX</Text>
              </View>
@@ -131,7 +131,7 @@ export default function ProfileScreen() {
              <View className="w-10 h-10 rounded-full bg-purple-50 items-center justify-center mr-4">
                 <Info color="#a855f7" size={18} />
              </View>
-             <View>
+             <View style={{ flex: 1 }}>
                  <Text className="text-slate-800 font-bold text-[15px]">Government Welfare Programs</Text>
                  <Text className="text-slate-500 text-xs mt-0.5">Social security benefits</Text>
              </View>
@@ -141,7 +141,7 @@ export default function ProfileScreen() {
              <View className="w-10 h-10 rounded-full bg-green-50 items-center justify-center mr-4">
                 <HelpCircle color="#10b981" size={18} />
              </View>
-             <View>
+             <View style={{ flex: 1 }}>
                  <Text className="text-slate-800 font-bold text-[15px]">Insurance FAQ</Text>
                  <Text className="text-slate-500 text-xs mt-0.5">Common questions</Text>
              </View>

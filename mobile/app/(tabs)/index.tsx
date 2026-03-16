@@ -152,10 +152,12 @@ export default function DashboardScreen() {
             {/* Platform Covered Assurance Row */}
             <View className="bg-slate-50 rounded-2xl p-4 flex-row justify-between items-center">
               <View className="flex-row items-center flex-1 pr-2">
-                 <ShieldCheck color="#64748b" size={16} className="mr-2" />
-                 <Text className="text-slate-500 text-sm">Covered by platform</Text>
+                 <View style={{ marginRight: 8 }}>
+                   <ShieldCheck color="#64748b" size={16} />
+                 </View>
+                 <Text className="text-slate-500 text-sm" style={{ flexShrink: 1 }}>Covered by platform</Text>
               </View>
-              <Text className="text-slate-900 font-bold text-sm">₹0 Out-of-pocket</Text>
+              <Text className="text-slate-900 font-bold text-sm" style={{ flexShrink: 0 }}>₹0 Out-of-pocket</Text>
             </View>
           </View>
         </View>
